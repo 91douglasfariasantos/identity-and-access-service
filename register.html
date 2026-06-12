@@ -31,6 +31,12 @@
           <div class="position-relative">
             <i class="bi bi-person position-absolute top-50 start-0 translate-middle-y ms-3 text-muted"></i>
             <input type="text" class="form-control ps-5" id="name" placeholder="Nome completo...">
+            <div id="nameFeedbackInvalid" class="invalid-feedback" style="display: none !important;">
+            Por favor, insira seu nome completo.
+            </div>
+            <div id="nameFeedbackValid" class="valid-feedback" style="display: none !important;">
+            Nome válido!
+            </div>
           </div>
         </div>
 
@@ -71,14 +77,20 @@
           </div>
         </div>
 
-        <button type="submit" class="btn btn-primary w-100">Enviar</button>
+        <button type="button" class="btn btn-primary w-100" id="btnCadastrar">
+          Cadastrar
+        </button>
         <p class="text-center text-muted small mt-3 mb-0">
-               Já tem uma conta? <a href="login.html" class="text-decoration-none">
-                   Entrar </a>
-            </p>
+               Já tem uma conta? 
+        <a href="login.html" class="text-decoration-none">
+        Entrar 
+        </a>
+        </p>
       </form>
     </div>
   </div>
+
+  <script src="./js/register.js"></script>
 
 
 </body>
