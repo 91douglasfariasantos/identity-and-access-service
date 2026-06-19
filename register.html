@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,71 +26,74 @@
         </p>
       </div>
       <form>
-        <!-- NOME -->
         <div class="mb-3">
-          <label for="name" class="form-label">Nome</label>
+          <label for="name" class="form-label">
+            Nome
+          </label>
           <div class="position-relative">
             <i class="bi bi-person position-absolute top-50 start-0 translate-middle-y ms-3 text-muted"></i>
-            <input type="text" class="form-control ps-5" id="name" placeholder="Nome completo...">
-            <div id="nameFeedbackInvalid" class="invalid-feedback" style="display: none !important;">
-              Por favor, insira seu nome completo.
-            </div>
-            <div id="nameFeedbackValid" class="valid-feedback" style="display: none !important;">
-              Nome válido!
-            </div>
+            <input type="text" id="name" class="form-control ps-5" placeholder="Nome completo..." required />
+          </div>
+          <div id="nameFeedbackInvalid" class="invalid-feedback" style="display: none !important;">
+            Por favor, insira seu nome completo.
+          </div>
+          <div id="nameFeedbackValid" class="valid-feedback" style="display: none !important;">
+            Nome válido!
           </div>
         </div>
 
         <!-- EMAIL - Atualizado -->
         <div class="mb-3">
-          <label for="email" class="form-label">Email</label>
+          <label for="email" class="form-label">
+            E-mail
+          </label>
           <div class="position-relative">
             <i class="bi bi-envelope position-absolute top-50 start-0 translate-middle-y ms-3 text-muted"></i>
-            <input type="email" class="form-control ps-5" id="email" aria-describedby="emailHelp"
-              placeholder="Insira um email válido...">
-            <div id="emailFeedbackInvalid" class="invalid-feedback" style="display: none !important;">
-              Email inválido!
-            </div>
-            <div id="emailFeedbackValid" class="valid-feedback" style="display: none !important;">
-              Email válido!
-            </div>
+            <input type="email" id="email" class="form-control ps-5" placeholder="seu@email.com" required />
           </div>
-          <div id="emailHelp" class="form-text">
-            Nunca compartilharemos seu e-mail com ninguém.
+          <div id="emailFeedbackInvalid" class="invalid-feedback" style="display: none !important;">
+            Por favor, insira um e-mail válido.
+          </div>
+          <div id="emailFeedbackValid" class="valid-feedback" style="display: none !important;">
+            E-mail válido!
           </div>
         </div>
 
-        <!-- SENHA - Atualizado -->
-        <div class="mb-3">
+        <div class="mb-4">
           <label for="password" class="form-label">Senha</label>
+
           <div class="position-relative">
             <i class="bi bi-lock position-absolute top-50 start-0 translate-middle-y ms-3 text-muted"></i>
-            <input type="password" class="form-control ps-5 pe-5" id="password" placeholder="Crie uma senha...">
-            <i class="bi bi-eye position-absolute top-50 end-0 translate-middle-y me-3 text-muted cursor-pointer"
+
+            <input type="password" id="password" class="form-control ps-5 pe-5" placeholder="••••••••" required />
+
+            <i class="bi bi-eye-fill position-absolute top-50 end-0 translate-middle-y me-3 text-muted"
               id="togglePassword" style="cursor: pointer;"></i>
-            <div id="passwordFeedbackInvalid" class="invalid-feedback" style="display: none !important;">
-              Mín. 8 caracteres, 1 maiúscula, 1 minúscula, 1 número e 1 caractere especial (@$!%*?&)
-            </div>
-            <div id="passwordFeedbackValid" class="valid-feedback" style="display: none !important;">
-              Senha forte!
-            </div>
+          </div>
+
+          <div id="passwordFeedbackInvalid" class="invalid-feedback">
+            A senha deve ter no mínimo 8 caracteres, uma maiúscula, um número e um caractere especial.
+          </div>
+          <div id="passwordFeedbackValid" class="valid-feedback">
+            Senha válida!
           </div>
         </div>
 
         <!-- CPF - Atualizado -->
         <div class="mb-3">
           <label for="cpf-user" class="form-label">CPF</label>
+
           <div class="position-relative">
             <i class="bi bi-credit-card position-absolute top-50 start-0 translate-middle-y ms-3 text-muted"></i>
-            <input type="text" class="form-control ps-5 pe-5" id="cpf-user" placeholder="Digite seu CPF...">
-            <i class="bi bi-eye position-absolute top-50 end-0 translate-middle-y me-3 text-muted" id="toggleCpf"
-              style="cursor: pointer;"></i>
-            <div id="cpf-userFeedbackInvalid" class="invalid-feedback" style="display: none !important;">
-              CPF inválido!
-            </div>
-            <div id="cpf-userFeedbackValid" class="valid-feedback" style="display: none !important;">
-              CPF válido!
-            </div>
+
+            <input type="text" class="form-control ps-5 pe-5" id="cpf-user" placeholder="000.000.000-00">
+          </div>
+
+          <div id="cpf-userFeedbackInvalid" class="invalid-feedback">
+            CPF inválido!
+          </div>
+          <div id="cpf-userFeedbackValid" class="valid-feedback">
+            CPF válido!
           </div>
         </div>
 
@@ -108,15 +110,7 @@
     </div>
   </div>
 
-  <script src="./js/register.js"></script>
-
-
-</body>
-
-</html>
-
-  <script src="./js/register.js"></script>
-
+  <script src="js/register.js"></script>
 
 </body>
 </html>
